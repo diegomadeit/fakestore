@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { Helmet } from "react-helmet";
 import Theme from "./Theme";
 import Header from "./Header";
 import Hero from "./Hero";
@@ -12,6 +13,11 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ layout = "", children }) => (
   <Theme>
+    <Helmet>
+      <html lang="en" />
+      <title>fakestore</title>
+      <meta name="description" content="Store for young professionals" />
+    </Helmet>
     <Container>
       <Header />
       {layout === "home" && <Hero />}

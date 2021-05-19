@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import { useThemeUI } from "theme-ui";
 import { Link } from "gatsby";
-import Logo from "../assets/svg/logo.inline.svg";
+import Logo from "./Logo";
 
 const Header: React.FC = () => {
   const { theme } = useThemeUI();
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
           <NavigationList>
             <li>
               <Link to="/">
-                <LogoStore />
+                <Logo />
               </Link>
             </li>
             <li>
@@ -73,11 +73,6 @@ const NavigationList = styled.ul`
     flex-direction: row;
     justify-content: space-between;
   }
-`;
-
-const LogoStore = styled(Logo)`
-  width: auto;
-  height: ${props => props.theme.sizes["8"]};
 `;
 
 const NavLink = styled(Link)`

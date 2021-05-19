@@ -62,4 +62,5 @@ const BuyButton = styled.button`
   background: ${props => props.theme.colors.green[6]};
   padding: ${props => props.theme.space[3]};
   text-align: center;
+  cursor: pointer;
 `;
