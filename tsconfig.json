@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "jsx": "react",
+    "lib": ["dom", "es6"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true
+  },
+  "include": [
+    "./packages/**/src/**/*",
+    "./packages/**/*.js",
+    "./store/*.js",
+    ".eslintrc.js"
+  ],
+  "exclude": ["node_modules", "packages/**/node_modules", "store/node_modules"]
+}
